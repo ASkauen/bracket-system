@@ -1,7 +1,24 @@
+#tree {
+  display: grid;
+  width: fit-content;
+}
+
 #bracket {
   display: grid;
+  grid-template-columns: min-content auto;
+}
+
+#root {
+  display: grid;
+  align-items: center;
+}
+
+#winner {
   border: 1px solid black;
-  width: fit-content;
+  height: 40px;
+  width: 100px;
+  margin-left: -50px;
+  background-color: white;
 }
 
 .bracket-lines {
@@ -9,10 +26,11 @@
   grid-template-rows: 1fr 1fr;
   border: solid black 1px;
   border-left: none;
-  height: 100px;
+  height: 50%;
   width: 200px;
-  margin: 40px 0px;
+  margin: 60px 0px;
   justify-items: center;
+  align-self: center;
 }
 
 .box-top {
@@ -44,9 +62,5 @@
 .box {
   display: grid;
   width: fit-content;
-  align-self: center;
-}
-
-.module {
   align-self: center;
 }
