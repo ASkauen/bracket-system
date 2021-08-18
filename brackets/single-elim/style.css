@@ -23,14 +23,19 @@
 
 .bracket-lines {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   border: solid black 1px;
   border-left: none;
   height: 50%;
+  margin: 100px 0px;
   width: 200px;
-  margin: 60px 0px;
   justify-items: center;
   align-self: center;
+}
+
+div.bracket-lines>p {
+  justify-self: end;
+  margin-right: 10px;
 }
 
 .box-top {
